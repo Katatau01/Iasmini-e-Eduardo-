@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmação de Presença - Casamento</title>
+</head>
+<body>
+  <h1>Você vai ao nosso casamento?</h1>
+  <form action="https://formspree.io/f/seuID" method="POST">
+    <label>Nome:</label><br>
+    <input type="text" name="nome" required><br><br>
+
+    <label>Vai comparecer?</label><br>
+    <select name="presenca">
+      <option value="Sim">Sim</option>
+      <option value="Não">Não</option>
+    </select><br><br>
+
+    <label>Número de acompanhantes:</label><br>
+    <input type="number" name="acompanhantes" min="0"><br><br>
+
+    <button type="submit">Confirmar</button>
+  </form>
+</body>
+</html>
